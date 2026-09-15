@@ -1,0 +1,752 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedCare Pharmacy | Your Health, Our Priority</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>Open today: 8:00 AM – 10:00 PM</p>
+        <p>📞 Pharmacy Support: +91 98765 43210</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="container nav-wrapper">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">✚</span>
+                <div>
+                    <strong>MEDCARE</strong>
+                    <small>PHARMACY</small>
+                </div>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#home">Home</a>
+                <a href="#medicines">Medicines</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="nav-button">Contact Pharmacy</a>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">TRUSTED PHARMACY CARE</span>
+
+                    <h1>
+                        Your health.
+                        <span>Our priority.</span>
+                    </h1>
+
+                    <p>
+                        Discover everyday healthcare products and medicines
+                        from MedCare Pharmacy. Simple, reliable and convenient
+                        pharmacy information in one place.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#medicines" class="primary-btn">
+                            Explore Medicines →
+                        </a>
+
+                        <a href="#contact" class="secondary-btn">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <div class="trust-row">
+                        <div>
+                            <strong>500+</strong>
+                            <span>Products</span>
+                        </div>
+
+                        <div>
+                            <strong>10+</strong>
+                            <span>Categories</span>
+                        </div>
+
+                        <div>
+                            <strong>12 hrs</strong>
+                            <span>Open Daily</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="floating-card card-one">
+                        <span>✓</span>
+                        <div>
+                            <strong>Quality Products</strong>
+                            <small>Trusted pharmacy care</small>
+                        </div>
+                    </div>
+
+                    <div class="medicine-showcase">
+                        <div class="cross-shape">✚</div>
+                        <p>MEDCARE</p>
+                        <h3>HEALTH<br>ESSENTIALS</h3>
+                        <small>CARE • TRUST • WELLNESS</small>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <span>24/7</span>
+                        <div>
+                            <strong>Health Support</strong>
+                            <small>We're here to help</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="categories-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">SHOP BY CATEGORY</span>
+                        <h2>Healthcare essentials</h2>
+                    </div>
+
+                    <p>
+                        Find products by health category and explore
+                        information about commonly stocked medicines.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <button class="category-card active" data-category="all">
+                        <span class="category-icon">✚</span>
+                        <strong>All Products</strong>
+                        <small>View everything</small>
+                    </button>
+
+                    <button class="category-card" data-category="cold">
+                        <span class="category-icon">🤧</span>
+                        <strong>Cold & Cough</strong>
+                        <small>Cold care</small>
+                    </button>
+
+                    <button class="category-card" data-category="pain">
+                        <span class="category-icon">🌡️</span>
+                        <strong>Fever & Pain</strong>
+                        <small>Pain relief</small>
+                    </button>
+
+                    <button class="category-card" data-category="allergy">
+                        <span class="category-icon">🌸</span>
+                        <strong>Allergy</strong>
+                        <small>Allergy care</small>
+                    </button>
+
+                    <button class="category-card" data-category="stomach">
+                        <span class="category-icon">🫃</span>
+                        <strong>Stomach</strong>
+                        <small>Digestive care</small>
+                    </button>
+
+                    <button class="category-card" data-category="vitamins">
+                        <span class="category-icon">💊</span>
+                        <strong>Vitamins</strong>
+                        <small>Supplements</small>
+                    </button>
+
+                    <button class="category-card" data-category="skin">
+                        <span class="category-icon">🧴</span>
+                        <strong>Skin Care</strong>
+                        <small>Daily care</small>
+                    </button>
+
+                    <button class="category-card" data-category="firstaid">
+                        <span class="category-icon">🩹</span>
+                        <strong>First Aid</strong>
+                        <small>Emergency essentials</small>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MEDICINES -->
+        <section class="medicines-section" id="medicines">
+            <div class="container">
+
+                <div class="medicine-header">
+
+                    <div>
+                        <span class="eyebrow">MEDCARE COLLECTION</span>
+                        <h2>Medicines & essentials</h2>
+                        <p id="resultText">
+                            Explore our healthcare collection.
+                        </p>
+                    </div>
+
+                    <div class="search-box">
+                        <span>⌕</span>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search medicine..."
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="medicine-grid" id="medicineGrid">
+
+                    <!-- PRODUCT 1 -->
+                    <article class="medicine-card"
+                        data-category="cold"
+                        data-name="Cetirizine">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80"
+                                 alt="Medicine">
+                            <span class="product-tag">ALLERGY</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Cetirizine</h3>
+                            <p>Commonly used for relief of allergy symptoms.</p>
+
+                            <div class="composition">
+                                <span>Composition</span>
+                                <strong>Cetirizine</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Cetirizine"
+                                data-type="Tablet"
+                                data-benefit="Commonly used to relieve symptoms associated with allergies."
+                                data-composition="Cetirizine">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+                    <article class="medicine-card"
+                        data-category="cold"
+                        data-name="Solvin Cold">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=700&q=80"
+                                 alt="Pharmacy medicine">
+                            <span class="product-tag">COLD CARE</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Solvin Cold</h3>
+                            <p>Branded cold medicine; formulation depends on the specific pack.</p>
+
+                            <div class="composition">
+                                <span>Formula</span>
+                                <strong>Check pack label</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Solvin Cold"
+                                data-type="Tablet"
+                                data-benefit="Used for common cold-related symptoms according to the specific product formulation."
+                                data-composition="Verify the exact composition on the product pack.">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 3 -->
+                    <article class="medicine-card"
+                        data-category="pain"
+                        data-name="Paracetamol">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=700&q=80"
+                                 alt="Paracetamol medicine">
+                            <span class="product-tag">FEVER</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Paracetamol</h3>
+                            <p>Commonly used to reduce fever and relieve mild pain.</p>
+
+                            <div class="composition">
+                                <span>Composition</span>
+                                <strong>Paracetamol</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Paracetamol"
+                                data-type="Tablet"
+                                data-benefit="Used for temporary relief of fever and mild-to-moderate pain."
+                                data-composition="Paracetamol">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 4 -->
+                    <article class="medicine-card"
+                        data-category="pain"
+                        data-name="Ibuprofen">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=700&q=80"
+                                 alt="Pain relief medicine">
+                            <span class="product-tag">PAIN CARE</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Ibuprofen</h3>
+                            <p>A medicine commonly used for pain and inflammation.</p>
+
+                            <div class="composition">
+                                <span>Composition</span>
+                                <strong>Ibuprofen</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Ibuprofen"
+                                data-type="Tablet"
+                                data-benefit="Commonly used for temporary relief of pain and inflammation."
+                                data-composition="Ibuprofen">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 5 -->
+                    <article class="medicine-card"
+                        data-category="allergy"
+                        data-name="Levocetirizine">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=700&q=80"
+                                 alt="Allergy medicine">
+                            <span class="product-tag">ALLERGY</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Levocetirizine</h3>
+                            <p>Commonly used for symptoms associated with allergies.</p>
+
+                            <div class="composition">
+                                <span>Composition</span>
+                                <strong>Levocetirizine</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Levocetirizine"
+                                data-type="Tablet"
+                                data-benefit="Commonly used to relieve allergy symptoms."
+                                data-composition="Levocetirizine">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 6 -->
+                    <article class="medicine-card"
+                        data-category="stomach"
+                        data-name="Pantoprazole">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=700&q=80"
+                                 alt="Stomach medicine">
+                            <span class="product-tag">STOMACH</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TABLET</small>
+                            <h3>Pantoprazole</h3>
+                            <p>Commonly used to reduce stomach acid production.</p>
+
+                            <div class="composition">
+                                <span>Composition</span>
+                                <strong>Pantoprazole</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Pantoprazole"
+                                data-type="Tablet"
+                                data-benefit="Used in conditions where reducing stomach acid is appropriate."
+                                data-composition="Pantoprazole">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 7 -->
+                    <article class="medicine-card"
+                        data-category="vitamins"
+                        data-name="Vitamin C">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=700&q=80"
+                                 alt="Vitamin supplement">
+                            <span class="product-tag">VITAMINS</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>SUPPLEMENT</small>
+                            <h3>Vitamin C</h3>
+                            <p>A dietary supplement containing vitamin C.</p>
+
+                            <div class="composition">
+                                <span>Formula</span>
+                                <strong>Vitamin C</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Vitamin C"
+                                data-type="Supplement"
+                                data-benefit="Provides vitamin C as a dietary supplement."
+                                data-composition="Vitamin C">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 8 -->
+                    <article class="medicine-card"
+                        data-category="vitamins"
+                        data-name="Vitamin D3">
+
+                        <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=700&q=80"
+     alt="Vitamin D supplement">    
+            
+                            <span class="product-tag">WELLNESS</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>SUPPLEMENT</small>
+                            <h3>Vitamin D3</h3>
+                            <p>A supplement used as a source of vitamin D.</p>
+
+                            <div class="composition">
+                                <span>Formula</span>
+                                <strong>Vitamin D3</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Vitamin D3"
+                                data-type="Supplement"
+                                data-benefit="Provides vitamin D3 as a dietary supplement."
+                                data-composition="Vitamin D3">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 9 -->
+                    <article class="medicine-card"
+                        data-category="skin"
+                        data-name="Antiseptic Cream">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=700&q=80"
+                                 alt="Skin care product">
+                            <span class="product-tag">SKIN CARE</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>TOPICAL</small>
+                            <h3>Antiseptic Cream</h3>
+                            <p>Topical pharmacy product for appropriate minor skin care.</p>
+
+                            <div class="composition">
+                                <span>Type</span>
+                                <strong>Check product label</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Antiseptic Cream"
+                                data-type="Topical product"
+                                data-benefit="For appropriate minor skin care according to the specific product label."
+                                data-composition="Verify the active ingredients on the product pack.">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <!-- PRODUCT 10 -->
+                    <article class="medicine-card"
+                        data-category="firstaid"
+                        data-name="First Aid Bandage">
+
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=700&q=80"
+                                 alt="First aid product">
+                            <span class="product-tag">FIRST AID</span>
+                        </div>
+
+                        <div class="product-info">
+                            <small>FIRST AID</small>
+                            <h3>Adhesive Bandage</h3>
+                            <p>Basic first-aid essential for covering minor wounds.</p>
+
+                            <div class="composition">
+                                <span>Type</span>
+                                <strong>Adhesive dressing</strong>
+                            </div>
+
+                            <button class="details-btn"
+                                data-name="Adhesive Bandage"
+                                data-type="First-aid product"
+                                data-benefit="Used to cover and protect minor cuts and abrasions."
+                                data-composition="Adhesive dressing">
+                                View Details →
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="no-results" id="noResults">
+                    <span>🔎</span>
+                    <h3>No products found</h3>
+                    <p>Try another medicine name or category.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <div class="container about-grid">
+
+                <div class="about-visual">
+                    <div class="about-box">
+                        <span class="big-cross">✚</span>
+                        <h3>MEDCARE</h3>
+                        <p>Trusted healthcare support</p>
+                    </div>
+
+                    <div class="experience-card">
+                        <strong>10+</strong>
+                        <span>Years of<br>Pharmacy Care</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">ABOUT MEDCARE</span>
+
+                    <h2>Healthcare made simple.</h2>
+
+                    <p>
+                        MedCare Pharmacy is focused on making everyday
+                        healthcare information easier to discover.
+                        We bring commonly needed pharmacy products
+                        together in a clean and convenient experience.
+                    </p>
+
+                    <div class="about-points">
+                        <div>
+                            <span>✓</span>
+                            <p><strong>Quality focused</strong><br>Products sourced through trusted pharmacy channels.</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p><strong>Customer first</strong><br>Friendly support for everyday healthcare needs.</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p><strong>Professional care</strong><br>Ask a qualified pharmacist for medicine guidance.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+
+                <div class="contact-content">
+                    <span class="eyebrow">GET IN TOUCH</span>
+                    <h2>We're here to help.</h2>
+
+                    <p>
+                        Have a question about our pharmacy or available
+                        products? Contact the MedCare team.
+                    </p>
+
+                    <div class="contact-list">
+
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <p>MedCare Pharmacy, Main Road, Your City</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <div>
+                                <strong>Call Us</strong>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@medcarepharmacy.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="contact-card">
+                    <span class="contact-cross">✚</span>
+
+                    <h3>Pharmacy Hours</h3>
+
+                    <div class="hours-row">
+                        <span>Monday – Friday</span>
+                        <strong>8 AM – 10 PM</strong>
+                    </div>
+
+                    <div class="hours-row">
+                        <span>Saturday</span>
+                        <strong>8 AM – 10 PM</strong>
+                    </div>
+
+                    <div class="hours-row">
+                        <span>Sunday</span>
+                        <strong>9 AM – 8 PM</strong>
+                    </div>
+
+                    <a href="tel:+919876543210" class="call-btn">
+                        Call Pharmacy →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">✚</span>
+                    <div>
+                        <strong>MEDCARE</strong>
+                        <small>PHARMACY</small>
+                    </div>
+                </a>
+
+                <p>
+                    Your health. Our priority.
+                </p>
+            </div>
+
+            <div class="footer-credit">
+                <p>Designed & Developed by</p>
+                <strong>Juveria Fatima</strong>
+            </div>
+
+            <p class="copyright">
+                © 2026 MedCare Pharmacy. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- MEDICINE MODAL -->
+    <div class="modal" id="medicineModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">×</button>
+
+            <span class="modal-icon">✚</span>
+
+            <small id="modalType">TABLET</small>
+
+            <h2 id="modalName">Medicine Name</h2>
+
+            <div class="modal-line"></div>
+
+            <h4>Benefits / Uses</h4>
+            <p id="modalBenefit"></p>
+
+            <h4>Composition / Formula</h4>
+            <p id="modalComposition"></p>
+
+            <div class="medical-note">
+                <strong>Important:</strong>
+                Medicine information is provided for general awareness.
+                Always check the product packaging and consult a qualified
+                pharmacist or doctor before using medicines.
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
